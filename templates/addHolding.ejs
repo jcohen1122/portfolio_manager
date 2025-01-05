@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Add Holding - Portfolio Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+	<h1>Add Holding</h1>
+    <form action = "/addHolding" method = "post">
+        <fieldset>
+            <legend><strong>Holding Information</strong></legend>
+            Name <input type="text" name = "name" required>
+            <br><br>
+            Quantity <input type="text" name = "quantity" required>
+            <br><br>
+            Base Price <input type="text" name = "basePrice" required>
+            <br><br>
+            Current Position <input type="text" name = "currPosition" required>
+            <br><br>
+            <button type="reset">Reset</button>
+            <br>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+    <a href = "/userhub">Go home</a>
+</body>
+</html>

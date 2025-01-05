@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Create Account - Portfolio Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+	<h1>Create Account</h1>
+    <form action = "/createUser" method = "post">
+        <fieldset>
+            Username <input type="text" name = "username" required>
+            <br><br>
+            Password <input type="password" name = "password" required>
+            <br><br>
+            <button type="reset">Reset</button>
+            <br>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+    <br>
+   Already have an account? <a href="/">Login</a>
+</body>
+</html>

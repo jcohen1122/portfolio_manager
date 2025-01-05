@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Dashboard - Portfolio Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 1000px;
+            padding: 20px;
+            border-radius: 12px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+	<h1>Dashboard</h1>
+    <h2>Current Holdings</h2>
+    <form>
+        <fieldset>
+            <%- currentHoldings %>
+        </fieldset>
+    </form>
+    <br>
+    <form action = "/dashboard" method = "post">
+            <button type = "submit">Update Holdings</button>
+    </form>
+    <hr>
+	<a href = "/userhub">Go home</a>
+</body>
+</html>

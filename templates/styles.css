@@ -1,0 +1,154 @@
+/* HTML & Body */
+body {
+    background-image: url("blue-theme.jpg");
+    opacity: 0.8;
+    background-size: cover, auto;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+    opacity: 0.8;
+    background-size: cover, auto;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+/* BUTTONS */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* HYPERLINKS */
+a {
+    display: inline-block;
+    color: black; 
+    font-size: 18px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+a:hover {
+    color: #3498db;
+    font-weight: bold;
+}
+
+/* HEADERS */
+h1 {
+    font-size: 36px;
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 28px;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 1.3; 
+    border-bottom: 3px solid #2980b9;
+    padding-bottom: 10px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+/* TABLE */
+table {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #3498db;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+tbody {
+    background-color: #e9f3ff;
+}
+
+tbody tr:hover {
+    background-color: #d1ebff; 
+    transition: background-color 0.3s ease;
+}
+
+table tfoot {
+    background-color: #007BFF; 
+    color: white;
+    font-weight: bold;
+}
+
+tfoot td {
+    text-align: center;
+    padding: 12px 15px;
+    border: 1px solid black;
+}
+
+/* FORMS */
+form {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+legend {
+    font-size: 1.2rem;
+    color: #3498db;
+    font-weight: bold;
+    padding: 0 10px;
+}
